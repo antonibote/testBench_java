@@ -1,0 +1,27 @@
+{
+  "title": "Fibonacci Test Suite",
+  "description": "This exercise tests the Fibonacci function implementation.",
+  "shortDescription": "Test the Fibonacci implementation in Java.",
+  "tests": [
+    {
+      "name": "testFibonacciZero",
+      "points": 10,
+      "expected_result": "assertEquals(0, Main.fibonacci(0));"
+    },
+    {
+      "name": "testFibonacciOne",
+      "points": 10,
+      "expected_result": "assertEquals(1, Main.fibonacci(1));"
+    },
+    {
+      "name": "testFibonacciTwo",
+      "points": 10,
+      "expected_result": "assertEquals(1, Main.fibonacci(2));"
+    },
+    {
+      "name": "testFibonacciNegative",
+      "points": 5,
+      "expected_result": "assertThrows(IllegalArgumentException.class, () -> Main.fibonacci(-1));"
+    }
+  ]
+}
