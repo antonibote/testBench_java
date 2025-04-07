@@ -5,16 +5,17 @@
 
 # Build the project using Maven
 build:
-    mvn clean install
+	mvn clean install
 
 # Run the tests
 test:
-    mvn test
+	mvn test
 
 # Clean the project
 clean:
-    mvn clean
+	mvn clean
 
 # Custom deploy target (optional)
 deploy:
     echo "Deploying application..."
+    # Deployment logic here (e.g., Docker, Kubernetes)
