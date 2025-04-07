@@ -17,5 +17,5 @@ clean:
 
 # Custom deploy target (optional)
 deploy:
-    echo "Deploying application..."
+	echo "Deploying application..."
     # Deployment logic here (e.g., Docker, Kubernetes)
