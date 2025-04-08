@@ -1,27 +1,49 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
- // README at: https://github.com/devcontainers/templates/tree/main/src/java
- {
- 	"name": "Java",
- 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
- 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
- 
- 	"features": {
- 		"ghcr.io/devcontainers/features/java:1": {
- 			"version": "none",
- 			"installMaven": "true",
- 			"installGradle": "true"
- 		}
- 	}
- 
- 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
- 	// "forwardPorts": [],
- 
- 	// Use 'postCreateCommand' to run commands after the container is created.
- 	// "postCreateCommand": "java -version",
- 
- 	// Configure tool-specific properties.
- 	// "customizations": {},
- 
- 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
- 	// "remoteUser": "root"
- }
+# My Maven Project
+
+This project implements a simple Fibonacci function and includes unit tests to verify its correctness using JUnit.
+
+## Project Structure
+
+```
+my-maven-project
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── Main.java
+│   └── test
+│       └── java
+│           └── MainTest.java
+├── pom.xml
+└── README.md
+```
+
+## Requirements
+
+- Java Development Kit (JDK) 8 or higher
+- Maven 3.6.0 or higher
+
+## Building the Project
+
+To build the project, navigate to the project directory and run:
+
+```
+mvn clean install
+```
+
+## Running the Application
+
+To run the application, use the following command:
+
+```
+mvn exec:java -Dexec.mainClass="Main"
+```
+
+## Running Tests
+
+To run the tests, execute:
+
+```
+mvn test
+```
+
+This will run all the unit tests defined in the `src/test/java/MainTest.java` file.
