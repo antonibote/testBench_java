@@ -17,6 +17,6 @@
       "name": "testFibonacciTwo",
       "points": 5,
       "expected_result": "assertEquals(1, Main.fibonacci(2));"
-    },
+    }
   ]
 }
