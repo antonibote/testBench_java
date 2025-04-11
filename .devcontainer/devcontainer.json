@@ -1,12 +1,13 @@
 {
-    "name": "Java",
-    "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
-
-    "features": {
-        "ghcr.io/devcontainers/features/java:1": {
-            "version": "none",
-            "installMaven": "true",
-            "installGradle": "true"
-        }
+  "name": "Java",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "true"
     }
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace"
 }
