@@ -1,5 +1,5 @@
 {
-  "title": "Fibonacci Test Suite",
+  "title": "testBench Minimal",
   "description": "This exercise tests the Fibonacci function implementation.",
   "shortDescription": "Test the Fibonacci implementation in Java.",
   "tests": [
